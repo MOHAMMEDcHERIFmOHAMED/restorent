@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(41, 41, 163);
+    font-family: 'popins' , sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.home{
+    background: url(imgs/home_bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+}
+.home{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    gap: 300px;
+}
+.home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 85%;
+}
+/* .home header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.329);
+} */
+.home header img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.home header nav{
+    font-size: 18px;
+    display: flex;
+    gap: 22px;
+}
+nav a:hover {
+    border-bottom: solid 3px rgb(255, 225, 0);
+    transition: ease .3s ;
+}
+.txt{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 250px;
+    gap: 20px;
+}
+.txt h2{
+    font-size: 45px;
+    font-weight: 900;
+    color: black;
+}
+.txt h2 span{
+    color: rgb(255, 187, 0);
+}
+.txt button{
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: white 1px solid;
+    cursor: pointer;
+
+}
+/* ___________ section two _ 02 _ */
+
+.about{
+    color: rgb(20, 83, 219);
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+
+}
+.about header{
+    gap: 15px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    width: 60%;
+}
+.about header h1{
+    font-size: 30px;
+    color: rgb(2, 2, 79);
+    font-weight: 900;
+}
+.about header  p{
+    color: rgb(147, 147, 147);
+    font-weight: 100;
+}
+
+.info{
+    gap: 75px;
+    width: 75%;
+    padding: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.txt_info p{
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(20, 83, 219);
+}
+.txt_info button{
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: rgb(2, 2, 79);
+    border-radius: 15px;
+    border: white 1px solid;
+    cursor: pointer;
+}
+/* <!-- _________  MENU SECTION   _____________ --> */
+
+.menu{
+    gap: 70px;
+    padding-top: 25px;
+    background:url(imgs/offer-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+.menu header{
+    gap: 15px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    width: 60%;
+}
+.menu header h1{
+    font-size: 40px;
+    color: rgb(255, 186, 37);
+    font-weight: 600;
+
+    
+}
+.menu header p{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+}
+.offers{
+    gap: 10px;
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.food{
+    text-align: center;
+    padding: 0 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+}
+.food h2{
+    color: white;
+}
+.old_price{
+  text-decoration: line-through;
+  font-size: 13px;
+  color: rgb(147, 147, 147);
+}
+.price{
+    color: rgb(255, 186, 37);
+}
+
+/* _________________  special menu ________________ */
+
+.special_menu{
+    height: 120vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+
+}
+.special_menu ,h1 ,h2{
+    color: rgb(3, 34, 117);
+}
+.special_menu p {
+    color: black;
+}
+.special_menu header{
+    padding-top: 35px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    width: 75%;
+}
+.special_menu header h1{
+    font-size: 40px;
+    color: rgb(2, 2, 79);
+    font-weight: 600;
+}
+.special_menu header p{
+    color: rgb(148, 148, 148);
+    font-weight: 100;
+}
+.special_menu .foods{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 85%;
+    gap: 25px;
+
+}
+.special_menu .foods  .plat{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    width: 45%;
+    height: 90px;
+    gap: 15px;
+}
+.plat1_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom:  1px dotted rgb(153, 153, 153);
+
+}
+.plats_info{
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.special_menu .foods  .plat img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.plat1_info .price{
+    color: rgb(255, 186, 37);   
+     font-size: 18px;
+     font-weight: 600;
+}
+.special_menu button{
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px 25px;
+    background-color: rgb(255, 186, 37);
+    border-radius: 15px;
+    border: white 1px solid;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+/* ______ TIMING OF EVERY WAJBA */
+
+.timing_sec{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(222, 189, 0) ;
+}
+.timing{
+    padding: 10px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 70%;
+    height: 190px;
+}
+.timing1{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.timing1 h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* __________   GALLERY SECTION _____________ */
+
+.gallery{
+    height: 80vh;
+    background:url(imgs/offer-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;    
+}
+.gallery header{
+    margin-top: 40px ;
+}
+.gallery header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+.gallery img{
+    height: 200px;
+    width: 280px;
+    border-radius:15px ;
+}
+.glryImgs{
+    width: 50%;
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* _______________  CONTACT SECTION _________________ */
+
+.cantact_sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 90vh;
+    background-color: white;
+}
+.contact_info{
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 70px;
+}
+.contact_info i{
+    color: gold;
+    font-size: 20px;
+    font-weight: 600;    
+}
+.addres , .hours{
+    line-height: 35px;
+}
+.addres div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.addres h1{
+    margin-bottom: 10px;
+}
+.contact_info div , .hours  ,p{
+    color: rgb(82, 82, 82);
+}
+
+.main_contact{
+    margin-top: 70px;
+    width: 60%;
+     height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.follow{
+    gap: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sc i {
+    
+    background-color:  rgb(3, 34, 117);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+
+.input_info{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+input , textarea{
+    background-color: rgba(255, 255, 86, 0.35);
+    border: none;
+    height: 40Px;
+    border-radius: 10px;
+    padding: 7px;
+    width: 90%;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.input_info button{
+    cursor: pointer;
+    margin-top: 50px;
+    background-color:rgb(240, 184, 0) ;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer{
+    height: 50px;
+    background-color:  rgb(1, 1, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
