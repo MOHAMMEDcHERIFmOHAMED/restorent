@@ -6,6 +6,7 @@
     color: white;
     text-decoration: none;
 }
+/* change hase idk */
 .home{
     background: url(imgs/home_bg.jpeg);
     background-position: center;
@@ -28,15 +29,7 @@
     height: 80px;
     width: 85%;
 }
-/* .home header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.329);
-} */
+
 .home header img{
     height: 80px;
     width: 80px;
@@ -52,18 +45,17 @@ nav a:hover {
     transition: ease .3s ;
 }
 .txt{
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: 250px;
-    gap: 20px;
+    text-align: center;
 }
 .txt h2{
+    margin-bottom: 20px;
     font-size: 45px;
     font-weight: 900;
     color: black;
+}
+.home .txt p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 .txt h2 span{
     color: rgb(255, 187, 0);
@@ -77,15 +69,16 @@ nav a:hover {
     cursor: pointer;
 
 }
+.home .txt .book:hover {
+    background: white;
+    color: #333;
+}
 /* ___________ section two _ 02 _ */
 
 .about{
     color: rgb(20, 83, 219);
-    height: 90vh;
     background-color: white;
-    display: flex;
     align-items: center;
-    flex-direction: column;
     gap: 0px;
 
 }
@@ -104,17 +97,19 @@ nav a:hover {
     font-weight: 900;
 }
 .about header  p{
-    color: rgb(147, 147, 147);
+    color: rgb(147, 147, 148);
     font-weight: 100;
 }
 
 .info{
-    gap: 75px;
-    width: 75%;
-    padding: 20px;
-    height: 90%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+}
+.about .txt_info {
+    padding: 20px;
+    max-width: 600px;
 }
 .txt_info p{
     line-height: 30px;
@@ -141,20 +136,13 @@ nav a:hover {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    height: 80vh;
     flex-direction: column;
     display: flex;
     align-items: center;
-    height: 90vh;
 }
 .menu header{
     gap: 15px;
     margin-top: 70px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 80px;
-    width: 60%;
 }
 .menu header h1{
     font-size: 40px;
@@ -169,8 +157,8 @@ nav a:hover {
 }
 .offers{
     gap: 10px;
-    width: 75%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -178,35 +166,41 @@ nav a:hover {
 .food{
     text-align: center;
     padding: 0 15px;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 450px;
+    max-width: 300px;
+    margin: 10px;
+
 }
+
+
 .food h2{
     color: white;
+    margin: 10px 0;
+
 }
-.old_price{
-  text-decoration: line-through;
-  font-size: 13px;
-  color: rgb(147, 147, 147);
-}
-.price{
-    color: rgb(255, 186, 37);
+.menu .price_info {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 }
 
+.menu .old_price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.menu .price {
+    color: #ffbb00;
+}
 /* _________________  special menu ________________ */
+/* comment added */
 
 .special_menu{
-    height: 120vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     flex-direction: column;
-  
-
 }
 .special_menu ,h1 ,h2{
     color: rgb(3, 34, 117);
@@ -217,13 +211,11 @@ nav a:hover {
 .special_menu header{
     padding-top: 35px;
     gap: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 80px;
-    width: 75%;
+    text-align: center;
+   
 }
 .special_menu header h1{
+    margin-bottom: 10px;
     font-size: 40px;
     color: rgb(2, 2, 79);
     font-weight: 600;
@@ -237,17 +229,11 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    width: 85%;
-    gap: 25px;
-
 }
 .special_menu .foods  .plat{
     padding: 10px;
     display: grid;
     grid-template-columns: 80px 1fr;
-    width: 45%;
-    height: 90px;
     gap: 15px;
 }
 .plat1_info{
@@ -256,7 +242,6 @@ nav a:hover {
     align-items: center;
     margin-bottom: 20px;
     border-bottom:  1px dotted rgb(153, 153, 153);
-
 }
 .plats_info{
     gap: 10px;
@@ -286,37 +271,40 @@ nav a:hover {
 /* ______ TIMING OF EVERY WAJBA */
 
 .timing_sec{
-    height: 40vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:rgb(222, 189, 0) ;
 }
 .timing{
-    padding: 10px;
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 70%;
-    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 .timing1{
-    gap: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin:  40px;
+    text-align: center;
+}
+.timing .timing1 h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 .timing1 h2{
     color: white;
     font-size: 25px;
     font-weight: 900;
 }
-
+.timing .timing1 img {
+    height: 80px;
+    width: 100px;
+    margin-bottom: 10px;
+}
 /* __________   GALLERY SECTION _____________ */
 
 .gallery{
-    height: 80vh;
+    
     background:url(imgs/offer-background.jpg);
     background-position: center;
     background-size: cover;
@@ -325,6 +313,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     gap: 40px;    
+    padding-bottom: 50px;
 }
 .gallery header{
     margin-top: 40px ;
@@ -349,21 +338,20 @@ nav a:hover {
 /* _______________  CONTACT SECTION _________________ */
 
 .cantact_sec{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: 90vh;
     background-color: white;
+    padding: 50px;
+}
+.main_contact {
+    padding: 50px;
+    display: flex;
+    align-items: center ;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .contact_info{
-    display: flex;
-    align-items: center;
-   
-    flex-direction: column;
-    gap: 30px;
+    flex: 1;
+    max-width: 500px;
     padding: 20px;
-    padding-top: 70px;
 }
 .contact_info i{
     color: gold;
@@ -385,14 +373,6 @@ nav a:hover {
     color: rgb(82, 82, 82);
 }
 
-.main_contact{
-    margin-top: 70px;
-    width: 60%;
-     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
-}
 .follow{
     gap: 15px;
     width: 50%;
@@ -402,32 +382,21 @@ nav a:hover {
     align-items: flex-start;
 }
 .sc i {
-    
     background-color:  rgb(3, 34, 117);
     color: white;
     padding: 5px;
     border-radius: 50%;
 }
 
-
-
 .input_info{
-    padding-top: 70px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-
-
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
 }
 .inputs{
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-
+    gap: 10px;
 }
 input , textarea{
     background-color: rgba(255, 255, 86, 0.35);
@@ -435,11 +404,11 @@ input , textarea{
     height: 40Px;
     border-radius: 10px;
     padding: 7px;
-    width: 90%;
     color: black;
     font-weight: 600;
     font-size: 18px;
-
+    width: 100%;
+    border: 1px solid #ccc;
 }
 .input_info button{
     cursor: pointer;
@@ -452,10 +421,211 @@ input , textarea{
 }
 
 footer{
-    height: 50px;
     background-color:  rgb(1, 1, 67);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
 
+
+/* ________________ media queries _____________ */
+
+@media (max-width: 480px) {
+    body{
+        max-width: 480px;
+    }
+    section{
+        max-width: 100%;
+    }
+    .food img{
+        height: 150px;
+        height: 150px;
+    }
+  
+    .offers{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img_info img {
+        height: 300px;
+        width:  300px;
+    }
+    .txt_info p{
+        line-height: 23px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .txt_info button{
+        font-size: 15px;
+
+    }
+    .plat h2 ,span{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .plat  p{
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+    .plats_info{
+        margin-bottom: 30px;
+
+    }
+    .plat1_info{
+        border-bottom:  1.8px solid rgb(153, 153, 153);
+        margin-bottom: 5px;
+    }
+    .foods{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .plat{
+        max-width: 400px;
+
+    }
+    .menu header p {
+        font-size: 15px;
+        
+    }
+    .menu header {
+        align-items: end;
+    }
+
+/* gallery */
+
+
+.problem1{
+    height: 280px;
+    max-width: 450px;
+}
+#problem1{
+    height: 220px;
+    max-width: 220px;
+    border: solid 1px;
+}
+.timing_sec{
+    padding-bottom: 10px;
+}
+.timing{
+    flex-direction: column;
+}
+.timing1{
+    margin:  20px;
+    text-align: center;
+}
+.about header{
+    margin: 30px 55px;
+    width: 60%;
+
+}
+.about{
+    padding-bottom: 20px;
+}
+    /* ___________ */
+
+    .cantact_sec{
+        padding: 15px;
+    }
+    .main_contact {
+        padding: 15px;
+    }
+    .addres h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .input_info button {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    /* ________________ */
+    .home header nav{
+        display: none;
+    }
+    .home .txt h2 {
+        font-size: 30px;
+    }
+    
+    .home .txt p,
+    .home .txt .book {
+        font-size: 16px;
+    }
+
+    .about header h1,
+    .menu header h1,
+    .special_menu header h1 {
+        font-size: 30px;
+    }
+
+    .about header p,
+   
+    .special_menu header p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .food img{
+        height: 100px;
+        width:  100px;
+    }
+
+.problem1{
+        height: 280px;
+        max-width: 450px;
+}
+
+.glryImgs{
+    width: 90%;
+    justify-content: center;
+}
+/* timing */
+.timing .timing1 img {
+    height: 120px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.timing{
+    gap: 30px;
+}
+.timing1{
+    margin:  40px;
+    text-align: center;
+}
+.about header {
+    padding-left: 60px;
+    display: block;
+    text-align:left;
+}
+.about , .menu{
+    padding-bottom: 40px;
+}
+}
+@media (max-width: 1024px){
+    .food img{
+        height: 140px;
+        width:  140px;
+    }
+    .glryImgs{
+        width: 90%;
+        justify-content: center;
+    }
+    .info{
+        justify-content: center;
+    }
+   
+    .about{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 1440px){
+    .glryImgs{
+        width: 80%;
+        justify-content: center;
+    }
+}
